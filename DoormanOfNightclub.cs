@@ -24,7 +24,20 @@ public class DoormanOfNightclub
         
         // TODO: Usa if/else para asignar el mensaje correcto según la edad
         // Ejemplo: if (age < 18) { mensaje = "..."; }
-        
+
+        if(age < 18)
+        {
+            mensaje = "Fuera de aquí";
+        }
+        if(age >= 18 && age <= 64)
+        {
+            mensaje = "Bienvenido a la fiesta";
+        }
+        else if(age > 64)
+        {
+            mensaje = "Señor, el bingo es al lado";
+        }
+
         return mensaje;
     }
 }
